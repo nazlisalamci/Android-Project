@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".UploadImage">
+
+    <Button
+        android:id="@+id/button_choose_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose file"></Button>
+
+    <EditText
+        android:id="@+id/edit_text_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progerss_bar"
+        android:hint="Enter file name"></EditText>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/button_choose_image"
+        android:layout_above="@+id/edit_text_file_name"
+
+        android:layout_marginTop="16dp"></ImageView>
+
+    <ProgressBar
+        android:id="@+id/progerss_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_upload"
+        android:layout_marginBottom="16dp"></ProgressBar>
+
+    <Button
+        android:id="@+id/button_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:text="Upload"></Button>
+
+    <TextView
+        android:id="@+id/text_view_show_uploads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Show Uploads"
+        android:textSize="16dp"></TextView>
+
+</RelativeLayout>
